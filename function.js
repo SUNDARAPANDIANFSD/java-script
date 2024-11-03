@@ -28,10 +28,21 @@ let numbers1 = addition(5,3);
 console.log(numbers1);
 
 subtraction((a, b) => {
-     a - b;                  // output 
+    return a - b;                  // output 
 let numbers2 = subtraction(5,3);
 console.log(numbers2);
-})
+});
 
 let multiply = (a, b) => a - b;
-console.log(multiply(5, 3));  //output
+console.log(multiply(5, 3));      //output 
+
+let addition = function (x, y) {
+    return (x + y);                  //output 8
+};
+console.log(addition(5, 3));
+
+function addition (x, y) {
+    return x + y;               //output 8
+}
+let add = addition(5, 3);
+console.log(add);
